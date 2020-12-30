@@ -1,8 +1,8 @@
 import { Router } from "express";
-import common from "./routes/common";
+import pokkarproxyhandler from "./routes/proxyhandler";
 // guaranteed to get dependencies
 export default () => {
   const app = Router();
-  common(app);
+  pokkarproxyhandler(app);
   return app;
 };
